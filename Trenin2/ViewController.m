@@ -23,64 +23,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-//    self.arrayGroup = [NSMutableArray array];
-//     NSString* string;
-//    for (int i = 0; i < ((arc4random() % 6) + 5); i++) {
-//        
-//        Group* group = [[Group alloc]init];
-//        group.name = [NSString stringWithFormat:@"#%d",i + 1];
-//        NSMutableArray* array = [NSMutableArray array];
-//        for (int j = 0; j < ((arc4random() % 11) + 15); j++) {
-//            [array addObject:[Student randomAlphanumericString]];
-//            NSSortDescriptor* descriptor = [[NSSortDescriptor alloc] initWithKey:@"self" ascending:YES];
-//            [array sortUsingDescriptors:@[descriptor]];
-//           
-//            string = [array objectAtIndex:j];
-//            NSString* firstLetter = [string substringToIndex:1];
-//            
-//            NSLog(@"string = %@",string);
-//            
-//            
-//        }
-//        if ([self.searchBar.text length] > 0 && [string rangeOfString:self.searchBar.text].location == NSNotFound)  {
-//            continue;
-//        }
-//        
-//        group.students = array;
-//        self.namesArray = array;
-//        [self.arrayGroup addObject:group];
-//        
-//    }
-    /*NSMutableArray* arrayN = [NSMutableArray array];
-    self.arrayGroup = [NSMutableArray array];
-    NSMutableArray* array;//
-    Student* student = nil;
-    for (int i = 0; i < 5; i++) {
-        
-        Group* group = nil;
-        group = [[Group alloc]init];
-        group.name = [NSString stringWithFormat:@"%d",i + 1];
-        
-        array = [NSMutableArray array];//
-    for (int j = 0; j < 10; j++) {
-        student = [[Student alloc]init];
-        [array addObject:[student randStudent]];
-        
-        
-        }
-        group.students = [NSMutableArray array];
-        
-        group.students = array;
-        
-        //NSLog(@"Array %@",group.students);
-        [arrayN addObjectsFromArray:array];
-        [self.arrayGroup addObject:group];
-    }
-    
-    //[self.namesArray addObjectsFromArray:array];
-    self.namesArray = arrayN;
-    //NSLog(@"%@",self.namesArray);
-     */
+
     NSMutableArray* array = [NSMutableArray array];
     for (int i = 0; i < 100; i++) {
         [array addObject:[Student randStudent]];
